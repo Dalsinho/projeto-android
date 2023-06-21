@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+}
+
+
+:root {
+    --cor0: #c5ebd6; 
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+
+body {
+    background-color: var(--cor0);
+    margin: 0px;
+    font-family: var(--fonte-padrao);
+}
+
+/* HEADER ------------------------------------------------------ */
+
+header {
+    font-weight: normal;
+    color: white;
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
+    padding: 20px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.493);
+    min-height: 150px;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+header > p {
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+header > h1, p{
+    text-align: center;
+}
+
+nav > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    transition-duration: 0.3s;
+
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+/* HEADER ------------------------------------------------------ */
+
+/* MAIN -------------------------------------------------------- */
+
+main {
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.486);
+
+    min-width: 300px;
+    max-width: 850px;
+    margin: auto;
+}
+
+section > h1, h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+}
+
+section#sec_historia {
+    background-color: white;
+    padding: 20px;
+}
+
+section > h2 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 2px;
+    padding-left: 5px;
+    font-size: 1.3em;
+}
+
+section > p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.7em;
+}
+
+section > p > a {
+    text-decoration: none;
+    color: var(--cor4);
+    font-weight: bolder;
+}
+
+section > p > a.destaque {
+    padding: 2px;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+}
+
+a.destaque::after {
+    content: '\00A0\1F517';
+}
+
+section > p > a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+}
+
+img#bugdroid {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+section#sec_video {
+    background-color: var(--cor5);
+}
+
+section#sec_video > #video{
+    padding: 30px;
+}
+
+section#sec_versoes {
+    background-color: white;
+    padding: 30px;
+}
+
+section#sec_versoes > h3 { 
+    color: white;
+    background-color: var(--cor2);
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px 10px 0px 0px ;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
+}
+
+section#sec_versoes > #versoes { 
+    margin: 0px;
+    background-color: var(--cor0);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
+}
+
+section#sec_versoes > #versoes > p {
+    text-align: justify;
+}
+
+section > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+/* MAIN -------------------------------------------------------- */
+
+/* FOOTER ------------------------------------------------------ */
+
+footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor5);
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
+
+footer > P > span {
+    font-weight: bold;
+}
+/* FOOTER ------------------------------------------------------ */
